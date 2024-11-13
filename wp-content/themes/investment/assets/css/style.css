@@ -1,0 +1,45 @@
+@charset "UTF-8";
+
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+html {
+    margin: 0 !important;
+}
+
+/* ------ HEADER ------ */
+.header {
+    background-color: #FFF;
+    padding: 30px 50px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.header__logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    max-width: 250px;
+}
+
+.header__logo-image {
+    width: 100%;
+    height: auto;
+}
+
+@media screen and (max-width: 450px) {
+    .header {
+        padding: 30px;
+    }
+    .header__logo-image {
+        width: 100px;
+    }
+}
