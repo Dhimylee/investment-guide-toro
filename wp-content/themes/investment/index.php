@@ -25,7 +25,7 @@
                                             </div>
                                         <?php endif; ?>
                                         <div class="box-news-list__highlight-content">
-                                            <strong>
+                                            <strong class="box-news-list__highlight-content--category">
                                                 <?php
                                                     $categories = get_the_category();
                                                     if ( ! empty( $categories ) ) : ?>
@@ -34,8 +34,8 @@
                                                 ?>
                                             </strong>
                                             <h3><?php the_title(); ?></h3>
-                                            <p><?php echo get_the_date(); ?></p>
-                                            <a href="<?php the_permalink(); ?>">Leia mais</a>
+                                            <p><?php echo get_the_date('d/m/Y'); ?></p>
+                                            <a href="<?php the_permalink(); ?>">Ler agora <img width="20px" src="<?php echo get_template_directory_uri(); ?>/assets/img/ico/seta-direita.svg" alt=""></a>
                                         </div>
                                     </div>
                                 
@@ -47,7 +47,7 @@
             </div>
 
             <div class="box-homapge__button">
-                <a href="#">Carregar mais</a>
+                <a href="#">Carregar mais posts</a>
             </div>
         </div>
     </section>
