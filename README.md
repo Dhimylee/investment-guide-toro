@@ -22,7 +22,7 @@ Follow the steps below to clone the repository.
 git clone https://github.com/Dhimylee/investment-guide-toro.git
 ```
 
-2. Change the name of the folder created in the clone to 'investment-guide-toro';
+2. If the folder name is different from 'investment-guide-toro', change the folder name;
 
 3. Enter the folder created by the terminal and check if it is in the main branch;
 ```
