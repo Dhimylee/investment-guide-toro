@@ -1,0 +1,14 @@
+# Ignorar a pasta node_modules
+/node_modules/
+
+# Ignorar arquivos de build
+/build/
+
+# Ignorar logs de depuração
+debug.log
+
+# Ignorar arquivos de sistema do macOS
+.DS_Store
+
+# Ignorar arquivos de lock do NPM
+package-lock.json
