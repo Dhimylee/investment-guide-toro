@@ -48,7 +48,7 @@ git pull origin main
 
 10. Use the credentials user:dev pass:senhasecreta to log in to the admin;
 
-11. Configure the plugin:
+11. Configure the plugin (for its development):
     - Enter the 'bloco-investimentos' plugin folder via the terminal and install the dependencies;
     ```
     npm install
