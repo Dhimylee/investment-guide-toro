@@ -41,6 +41,7 @@ function renderizar_bloco_investimentos($attributes) {
     if (empty($attributes['postId'])) {
         return '<p>Investimento não selecionado.</p>';
     }
+    
 
     $post_id = $attributes['postId'];
     $post = get_post($post_id);
@@ -49,13 +50,21 @@ function renderizar_bloco_investimentos($attributes) {
         return '<p>Investimento inválido.</p>';
     }
 
+
     $categoria = get_post_meta($post_id, '_categoria', true);
     $tipo_rentabilidade = get_post_meta($post_id, '_tipo_rentabilidade', true);
     $risco = get_post_meta($post_id, '_risco', true);
     $rentabilidade = get_post_meta($post_id, '_rentabilidade', true);
     $aplicacao_minima = get_post_meta($post_id, '_aplicacao_minima', true);
-    $data_vencimento = get_post_meta($post_id, '_data_vencimento', true);
     $link_cta = get_post_meta($post_id, '_link_cta', true);
+    $data_vencimento = get_post_meta($post_id, '_data_vencimento', true);
+
+    if ($data_vencimento) {
+        $timestamp = strtotime($data_vencimento);
+        $data_vencimento_formatada = date('d/m/Y', $timestamp);
+    } else {
+        $data_vencimento_formatada = 'Data não disponível';
+    }
 
     return "
         <div class='box-investimentos'>
@@ -65,7 +74,7 @@ function renderizar_bloco_investimentos($attributes) {
                 <div class='box-investimentos__info'>
                     <div>
                         <span>" . esc_html($categoria) . "</span>
-                        <h3>" . esc_html($post->post_title) . "</h3>
+                        <span>" . esc_html($post->post_title) . "</span>
                     </div>
                     <p>" . esc_html($tipo_rentabilidade) . "</p>
 
@@ -84,7 +93,7 @@ function renderizar_bloco_investimentos($attributes) {
                 </div>
                 <div class='box-investimentos__blocks'>
                     <p>Data de Vencimento</p>
-                    <span>" . esc_html($data_vencimento) . "</span>
+                    <span>" . esc_html($data_vencimento_formatada) . "</span>
                 </div>
             </div>
         </div>
