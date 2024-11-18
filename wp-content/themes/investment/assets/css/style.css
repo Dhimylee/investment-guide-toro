@@ -267,6 +267,13 @@ h2, h3 {
     }
 }
 
+@media screen and (max-width: 575px) {
+  .single-post__title {
+    font-size: 2rem;
+    line-height: 40px;
+  }
+}
+
 /* ------ BLOCO CUSTOMIZADO ------ */
 .box-investimentos {
   border: 2px solid #e3eef9;

@@ -74,7 +74,7 @@ function renderizar_bloco_investimentos($attributes) {
                 <div class='box-investimentos__info'>
                     <div>
                         <span>" . esc_html($categoria) . "</span>
-                        <h3>" . esc_html($post->post_title) . "</h3>
+                        <span>" . esc_html($post->post_title) . "</span>
                     </div>
                     <p>" . esc_html($tipo_rentabilidade) . "</p>
 
