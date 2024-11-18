@@ -1,0 +1,13 @@
+{
+    "$schema": "https://schemas.wp.org/trunk/block.json",
+    "apiVersion": 2,
+    "name": "investimentos/bloco",
+    "title": "Bloco Investimentos",
+    "category": "widgets",
+    "icon": "chart-line",
+    "description": "Bloco para exibir os investimentos cadastrados.",
+    "supports": {
+        "html": false
+    },
+    "editorScript": "file:./build/index.js"
+}
