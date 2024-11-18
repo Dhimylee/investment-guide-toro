@@ -16,7 +16,7 @@
         <div class="container">
             <div class="header__logo">
                 <h1>
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/lgo/logo-toro-investimentos.svg.png" alt="Logo da Empresa" class="header__logo-image">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/lgo/logo-toro-investimentos.svg.png" alt="Logo da Empresa Toro Investimentos" class="header__logo-image">
                 </h1>
                 <p>Blog</p>
             </div>

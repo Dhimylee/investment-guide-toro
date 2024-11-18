@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: Bloco Investimentos
- * Description: Plugin para criar o Custom Post Type "Investimentos" e um bloco customizado para exibição.
+ * Description: Plugin para integrar o Custom Post Type Investimentos e um bloco customizado.
  * Version: 1.0.0
  * Author: Dhimylee Almeida
  */

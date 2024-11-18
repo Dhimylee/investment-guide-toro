@@ -19,7 +19,7 @@
                                     <div class="box-news-list__highlight">
                                         <?php if ( has_post_thumbnail() ) : ?>
                                             <div class="box-news-list__highlight-image">
-                                                <a href="<?php the_permalink(); ?>">
+                                                <a href="<?php the_permalink(); ?>" aria-label="Ir para a página do post">
                                                     <?php the_post_thumbnail( 'medium' ); ?>
                                                 </a>
                                             </div>
@@ -35,7 +35,7 @@
                                             </strong>
                                             <h3><?php the_title(); ?></h3>
                                             <p><?php echo get_the_date('d/m/Y'); ?></p>
-                                            <a href="<?php the_permalink(); ?>">Ler agora <img width="20px" src="<?php echo get_template_directory_uri(); ?>/assets/img/ico/seta-direita.svg" alt=""></a>
+                                            <a href="<?php the_permalink(); ?>">Ler agora <img width="20px" src="<?php echo get_template_directory_uri(); ?>/assets/img/ico/seta-direita.svg" alt="ícone de seta"></a>
                                         </div>
                                     </div>
                                 
@@ -52,3 +52,5 @@
         </div>
     </section>
 </main>
+
+<?php wp_footer(); ?>

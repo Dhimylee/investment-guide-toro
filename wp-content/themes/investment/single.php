@@ -19,8 +19,8 @@
                                 </strong>
                                 <h1 class="single-post__title"><?php the_title(); ?></h1>
                                 <div class="single-post__post-data">
-                                    <span class="single-post__author single-post--flex"><img width="20px" src="<?php echo get_template_directory_uri(); ?>/assets/img/ico/user.svg" alt=""><?php echo get_the_author(); ?></span>
-                                    <time class="single-post__time single-post--flex"><img width="20px" src="<?php echo get_template_directory_uri(); ?>/assets/img/ico/calendar.svg" alt="">Atualizado: <?php echo get_the_modified_date('d/m/Y'); ?> às <?php echo get_the_modified_time('H:i'); ?></time>
+                                    <span class="single-post__author single-post--flex"><img width="20px" src="<?php echo get_template_directory_uri(); ?>/assets/img/ico/user.svg" alt="ícone de user"><?php echo get_the_author(); ?></span>
+                                    <time class="single-post__time single-post--flex"><img width="20px" src="<?php echo get_template_directory_uri(); ?>/assets/img/ico/calendar.svg" alt="ícone de calendário">Atualizado: <?php echo get_the_modified_date('d/m/Y'); ?> às <?php echo get_the_modified_time('H:i'); ?></time>
                                 </div>
                                 <div class="single-post__content">
                                     <?php the_content(); ?>
@@ -43,7 +43,7 @@
 
                         if ($related_posts->have_posts()) :
                             while ($related_posts->have_posts()) : $related_posts->the_post(); ?>
-                                <a href="<?php the_permalink(); ?>">
+                                <a href="<?php the_permalink(); ?>" aria-label="Ir para pagína do post">
                                     <span class="link-content"><?php the_title(); ?></span>
                                     <img class="arrow-icon" width="35px" src="<?php echo get_template_directory_uri(); ?>/assets/img/ico/arrow.svg" alt="">
                                 </a>
@@ -56,3 +56,5 @@
         </div>
     </section>
 </main>
+
+<?php wp_footer(); ?>
