@@ -272,6 +272,11 @@ h2, h3 {
     font-size: 2rem;
     line-height: 40px;
   }
+
+  .single-post__post-data {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 
 /* ------ BLOCO CUSTOMIZADO ------ */
